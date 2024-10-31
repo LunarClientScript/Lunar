@@ -1,1 +1,2 @@
-
+getgenv().Key = "uWUk1gJI2OlWmm7AHSuoS6daTqQvEnCH"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LunarClientScript/Lunar/refs/heads/main/Loader.lua"))()
