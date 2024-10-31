@@ -14,6 +14,7 @@ if CurrentGame then
 
     if CurrentVersion == CurrentGame.Version then
         print("You are using the latest cheat version for " .. CurrentGame.Name)
+        loadstring(game:HttpGet("https://github.com/LunarClientScript/Lunar/blob/main/Lunar.lua"))()
     else
         LocalPlayer:Kick("A newer cheat version for " ..  CurrentGame.Name .. " is available.")
     end
