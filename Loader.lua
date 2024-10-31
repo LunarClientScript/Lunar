@@ -14,7 +14,12 @@ if CurrentGame then
 
     if CurrentVersion == CurrentGame.Version then
         print("You are using the latest cheat version for " .. CurrentGame.Name)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/LunarClientScript/Lunar/refs/heads/main/Lunar.lua"))()
+
+        if getgenv().Key == "uWUk1gJI2OlWmm7AHSuoS6daTqQvEnCH" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/LunarClientScript/Lunar/refs/heads/main/Lunar.lua"))()
+        else
+            print("You are using the old key")
+        end
     else
         LocalPlayer:Kick("A newer cheat version for " ..  CurrentGame.Name .. " is available.")
     end
