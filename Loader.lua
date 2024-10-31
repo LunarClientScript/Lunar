@@ -1,5 +1,5 @@
 local SupportedGames = {
-    [2317185366] = {
+    [17310566965] = {
         Name = "Unwavering Soul",
         Version = "1.0.0"
     }
