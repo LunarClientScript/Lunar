@@ -1,2 +1,335 @@
-getgenv().Key = "uWUk1gJI2OlWmm7AHSuoS6daTqQvEnCH"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LunarClientScript/Lunar/refs/heads/main/Loader.lua"))()
+--// fuck ur ass, skidders (key system only is not obsfucated)
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local OpenCustomPanel = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local KeyBox = Instance.new("TextBox")
+local UICorner_3 = Instance.new("UICorner")
+local Discord = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local ImageLabel = Instance.new("ImageLabel")
+local Title = Instance.new("TextLabel")
+local Enter = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local CustomKey = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local Title_2 = Instance.new("TextLabel")
+local KeyText = Instance.new("TextLabel")
+local CopyText = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.385474861, 0, 0.25248757, 0)
+Frame.Size = UDim2.new(0, 287, 0, 398)
+
+UICorner.Parent = Frame
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 287, 0, 50)
+TextLabel.Font = Enum.Font.Oswald
+TextLabel.Text = "Key System"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+OpenCustomPanel.Name = "OpenCustomPanel"
+OpenCustomPanel.Parent = Frame
+OpenCustomPanel.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+OpenCustomPanel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OpenCustomPanel.BorderSizePixel = 0
+OpenCustomPanel.Position = UDim2.new(0.0592334494, 0, 0.849246204, 0)
+OpenCustomPanel.Size = UDim2.new(0, 253, 0, 42)
+OpenCustomPanel.Font = Enum.Font.Oswald
+OpenCustomPanel.Text = "Open Custom Key Panel"
+OpenCustomPanel.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenCustomPanel.TextScaled = true
+OpenCustomPanel.TextSize = 14.000
+OpenCustomPanel.TextWrapped = true
+
+UICorner_2.Parent = OpenCustomPanel
+
+KeyBox.Name = "KeyBox"
+KeyBox.Parent = Frame
+KeyBox.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+KeyBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KeyBox.BorderSizePixel = 0
+KeyBox.Position = UDim2.new(0.0557491295, 0, 0.273869336, 0)
+KeyBox.Size = UDim2.new(0, 252, 0, 49)
+KeyBox.Font = Enum.Font.Oswald
+KeyBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+KeyBox.PlaceholderText = "Key"
+KeyBox.Text = ""
+KeyBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+KeyBox.TextScaled = true
+KeyBox.TextSize = 36.000
+KeyBox.TextWrapped = true
+
+UICorner_3.Parent = KeyBox
+
+Discord.Name = "Discord"
+Discord.Parent = Frame
+Discord.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Discord.BackgroundTransparency = 1.000
+Discord.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Discord.BorderSizePixel = 0
+Discord.Position = UDim2.new(0, 0, 0.125628144, 0)
+Discord.Size = UDim2.new(0, 287, 0, 50)
+
+UIListLayout.Parent = Discord
+UIListLayout.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+UIListLayout.Padding = UDim.new(0, 5)
+
+ImageLabel.Parent = Discord
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.400696874, 0, 0.125628144, 0)
+ImageLabel.Size = UDim2.new(0, 40, 0, 40)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=18505728201"
+
+Title.Name = "Title"
+Title.Parent = Discord
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.360627174, 0, 0.100000001, 0)
+Title.Size = UDim2.new(0, 183, 0, 40)
+Title.Font = Enum.Font.Oswald
+Title.Text = "discord.gg/sb2j9fzBAb"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+Enter.Name = "Enter"
+Enter.Parent = Frame
+Enter.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Enter.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Enter.BorderSizePixel = 0
+Enter.Position = UDim2.new(0.0766550526, 0, 0.437185943, 0)
+Enter.Size = UDim2.new(0, 240, 0, 75)
+Enter.Font = Enum.Font.Unknown
+Enter.Text = "Enter"
+Enter.TextColor3 = Color3.fromRGB(255, 255, 255)
+Enter.TextScaled = true
+Enter.TextSize = 14.000
+Enter.TextWrapped = true
+
+UICorner_4.Parent = Enter
+
+CustomKey.Name = "CustomKey"
+CustomKey.Parent = Frame
+CustomKey.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+CustomKey.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CustomKey.BorderSizePixel = 0
+CustomKey.Position = UDim2.new(-0.133000001, 0, -0.455000013, 0)
+CustomKey.Size = UDim2.new(0, 363, 0, 146)
+
+UICorner_5.Parent = CustomKey
+
+Title_2.Name = "Title"
+Title_2.Parent = CustomKey
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_2.BorderSizePixel = 0
+Title_2.Position = UDim2.new(-0.483936667, 0, -0.00647056289, 0)
+Title_2.Size = UDim2.new(0, 713, 0, 40)
+Title_2.Font = Enum.Font.Oswald
+Title_2.Text = "Custom Key"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+
+KeyText.Name = "KeyText"
+KeyText.Parent = CustomKey
+KeyText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KeyText.BackgroundTransparency = 1.000
+KeyText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KeyText.BorderSizePixel = 0
+KeyText.Position = UDim2.new(0.0495867766, 0, 0.26750204, 0)
+KeyText.Size = UDim2.new(0, 325, 0, 70)
+KeyText.Font = Enum.Font.Oswald
+KeyText.Text = "ABCDEFGHTRX"
+KeyText.TextColor3 = Color3.fromRGB(255, 255, 255)
+KeyText.TextScaled = true
+KeyText.TextSize = 61.000
+KeyText.TextWrapped = true
+
+CopyText.Name = "CopyText"
+CopyText.Parent = CustomKey
+CopyText.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+CopyText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CopyText.BorderSizePixel = 0
+CopyText.Position = UDim2.new(0.18457301, 0, 0.801369846, 0)
+CopyText.Size = UDim2.new(0, 229, 0, 50)
+CopyText.Font = Enum.Font.Oswald
+CopyText.Text = "Copy Custom Key"
+CopyText.TextColor3 = Color3.fromRGB(255, 255, 255)
+CopyText.TextScaled = true
+CopyText.TextSize = 14.000
+CopyText.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+CopyText.TextWrapped = true
+
+UICorner_6.Parent = CopyText
+
+local TweenService = game:GetService("TweenService")
+local UserInputService = game:GetService("UserInputService")
+
+local Frame = Frame
+local CustomKeyFrame = CustomKey
+
+local Config = {
+	DragToggle = false,
+	DragSpeed = 0.25,
+	DragStart = false,
+	StartPos = false,
+	CustomKey = false,
+	DecodedKey = "",
+	Key = "",
+}
+
+function UpdateInput(Input)
+	local Delta = Input.Position - Config.DragStart
+	local Position = UDim2.new(Config.StartPos.X.Scale, Config.StartPos.X.Offset + Delta.X, Config.StartPos.Y.Scale, Config.StartPos.Y.Offset + Delta.Y)
+	TweenService:Create(Frame, TweenInfo.new(Config.DragSpeed), {Position = Position}):Play()
+end
+
+function GenerateRandomString(Length)
+	local Characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()-_=+[]{}|;:'\",.<>?/`~"
+	local RandomString = ""
+	local RandomLength = Length - #RandomString  -- Calculate how many random characters to add
+
+
+	local GeneratedString = ""
+
+	repeat
+		GeneratedString = RandomString  -- Reset the generated string
+		for i = 1, RandomLength do
+			local RandomChar = Characters:sub(math.random(1, #Characters), math.random(1, #Characters))
+			GeneratedString = GeneratedString .. RandomChar
+		end
+	until #GeneratedString == 20  -- Regenerate if the total length is less than 10 characters
+
+	return GeneratedString
+end
+
+function Base64Encode(Data)
+	local Characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+	local Encoded = ""
+	local Padding = ""
+
+	-- Pad the data to be a multiple of 3 bytes
+	while #Data % 3 ~= 0 do
+		Data = Data .. '\0'
+		Padding = Padding .. '='
+	end
+
+	for i = 1, #Data, 3 do
+		local b1 = Data:byte(i)
+		local b2 = Data:byte(i + 1)
+		local b3 = Data:byte(i + 2)
+
+		local combined = (b1 * 256^2) + (b2 * 256) + b3
+		Encoded = Encoded .. Characters:sub((combined // 262144) + 1, (combined // 262144) + 1)
+		Encoded = Encoded .. Characters:sub(((combined // 4096) % 64) + 1, ((combined // 4096) % 64) + 1)
+		Encoded = Encoded .. Characters:sub(((combined // 64) % 64) + 1, ((combined // 64) % 64) + 1)
+		Encoded = Encoded .. Characters:sub((combined % 64) + 1, (combined % 64) + 1)
+	end
+
+	return Encoded:sub(1, #Encoded - #Padding) .. Padding
+end
+
+function StartGeneration()
+	Config.DecodedKey = GenerateRandomString(2)
+	Config.Key = "LunarClient_"..Base64Encode(Config.DecodedKey)
+	return Config.Key, Config.DecodedKey
+end
+
+local Key, DecodedKey = StartGeneration()
+print(Key, DecodedKey)
+CustomKeyFrame.KeyText.Text = DecodedKey
+CustomKeyFrame.Position = UDim2.new(-0.133, 0, -2, 0)
+
+Enter.MouseButton1Click:Connect(function()
+	if KeyBox.Text == Key then
+		print("Success")
+		KeyBox.Text = "Success"
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/LunarClientScript/Lunar/refs/heads/main/Loader.lua"))
+		ScreenGui:Destroy()
+		task.wait(1)
+		KeyBox.Text = ""
+	else
+		print("Error")
+		KeyBox.Text = "Invalid"
+		task.wait(1)
+		KeyBox.Text = ""
+	end
+end)
+
+OpenCustomPanel.MouseButton1Click:Connect(function()
+	if not Config.CustomKey then
+		OpenCustomPanel.Text = "Close Custom Panel"
+		CustomKeyFrame:TweenPosition(UDim2.new(-0.133, 0, -0.455, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Linear, 0.75)
+
+		-- Wait for the tween to finish
+		wait(0.75)  -- Wait for the duration of the tween
+		Config.CustomKey = true  -- Update the config after the tween completes
+	else
+		OpenCustomPanel.Text = "Open Custom Panel"
+		CustomKeyFrame:TweenPosition(UDim2.new(-0.133, 0, -2, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Linear, 0.75)
+
+		-- Wait for the tween to finish
+		wait(0.75)  -- Wait for the duration of the tween
+		Config.CustomKey = false  -- Update the config after the tween completes
+	end
+end)
+
+CustomKeyFrame.CopyText.MouseButton1Click:Connect(function()
+	print('uh')
+end)
+
+Frame.InputBegan:Connect(function(Input)
+	if (Input.UserInputType == Enum.UserInputType.MouseButton1 or Input.UserInputType == Enum.UserInputType.Touch) then 
+		Config.DragToggle = true
+		Config.DragStart = Input.Position
+		Config.StartPos = Frame.Position
+		Input.Changed:Connect(function()
+			if Input.UserInputState == Enum.UserInputState.End then
+				Config.DragToggle = false
+			end
+		end)
+	end
+end)
+
+UserInputService.InputChanged:Connect(function(Input)
+	if Input.UserInputType == Enum.UserInputType.MouseMovement or Input.UserInputType == Enum.UserInputType.Touch then
+		if Config.DragToggle then
+			UpdateInput(Input)
+		end
+	end
+end)
