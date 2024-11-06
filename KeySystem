@@ -241,7 +241,7 @@ end
 
 function Base64Encode(Data)
 	local Characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
-	local Encoded = ""
+	local Encoded = {}
 	local Padding = ""
 
 	-- Pad the data to be a multiple of 3 bytes
@@ -252,17 +252,23 @@ function Base64Encode(Data)
 
 	for i = 1, #Data, 3 do
 		local b1 = Data:byte(i)
-		local b2 = Data:byte(i + 1)
-		local b3 = Data:byte(i + 2)
+		local b2 = Data:byte(i + 1) or 0  -- Use 0 if b2 is nil
+		local b3 = Data:byte(i + 2) or 0  -- Use 0 if b3 is nil
 
 		local combined = (b1 * 256^2) + (b2 * 256) + b3
-		Encoded = Encoded .. Characters:sub((combined // 262144) + 1, (combined // 262144) + 1)
-		Encoded = Encoded .. Characters:sub(((combined // 4096) % 64) + 1, ((combined // 4096) % 64) + 1)
-		Encoded = Encoded .. Characters:sub(((combined // 64) % 64) + 1, ((combined // 64) % 64) + 1)
-		Encoded = Encoded .. Characters:sub((combined % 64) + 1, (combined % 64) + 1)
+
+		-- Using table for better performance with string concatenation
+		Encoded[#Encoded + 1] = Characters:sub((combined // 262144) + 1, (combined // 262144) + 1)
+		Encoded[#Encoded + 1] = Characters:sub(((combined // 4096) % 64) + 1, ((combined // 4096) % 64) + 1)
+		Encoded[#Encoded + 1] = Characters:sub(((combined // 64) % 64) + 1, ((combined // 64) % 64) + 1)
+		Encoded[#Encoded + 1] = Characters:sub((combined % 64) + 1, (combined % 64) + 1)
 	end
 
-	return Encoded:sub(1, #Encoded - #Padding) .. Padding
+	-- Convert the table back to a string
+	local result = table.concat(Encoded)
+
+	-- Return the encoded string with padding
+	return result:sub(1, #result - #Padding) .. Padding
 end
 
 function StartGeneration()
@@ -279,7 +285,6 @@ Enter.MouseButton1Click:Connect(function()
 	if KeyBox.Text == Key then
 		print("Success")
 		KeyBox.Text = "Success"
-		getgenv().Key = true
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/LunarClientScript/Lunar/refs/heads/main/Loader.lua"))()
 		ScreenGui:Destroy()
 		task.wait(1)
