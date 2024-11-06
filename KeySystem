@@ -1,5 +1,3 @@
---// fuck ur ass skidders, (btw who is skidding gets ip logging if they use script right away not using key system)
-
 -- Gui to Lua
 -- Version: 3.2
 
@@ -281,6 +279,7 @@ Enter.MouseButton1Click:Connect(function()
 	if KeyBox.Text == Key then
 		print("Success")
 		KeyBox.Text = "Success"
+		getgenv().Key = true
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/LunarClientScript/Lunar/refs/heads/main/Loader.lua"))()
 		ScreenGui:Destroy()
 		task.wait(1)
